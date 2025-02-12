@@ -1,5 +1,7 @@
+import HotelCard from "./HotelCard";
+
 const HotelList = () => {
-  return <>Hotel List</>;
+  return <HotelCard />;
 };
 
 export default HotelList;
