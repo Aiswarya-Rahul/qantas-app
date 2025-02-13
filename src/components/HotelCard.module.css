@@ -1,0 +1,107 @@
+@import "../assets/styles/variables.module.css";
+
+.content {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  column-gap: 15px;
+  padding: 15px;
+}
+
+.promoName {
+  position: absolute;
+  top: 25px;
+  left: 19px;
+  font-size: var(--teritiary-font-size);
+  background: var(--bg-color);
+  border: var(--border-color);
+  padding: 4px;
+  font-weight: bold;
+  color: var(--red);
+}
+.hotelName {
+  font-size: var(--primary-font-size);
+  color: rgb(14, 13, 13);
+  max-width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+.hotelNameRating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hotelAddress {
+  font-size: var(--secondary-font-size);
+  color: var(--secondary-font-color);
+}
+.hotelDetailsDiv {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #cacaca;
+  padding: 8px;
+}
+.hotelAddressDiv {
+  margin-bottom: 10px;
+}
+.redLinkDiv {
+  margin-bottom: 15px;
+}
+.redLink {
+  color: var(--red);
+  font-size: var(--secondary-font-size);
+}
+.greenLink {
+  color: var(--green);
+  font-size: var(--secondary-font-size);
+  text-decoration: none;
+}
+.pricePerUnit {
+  font-size: var(--teritiary-font-size);
+  color: var(--secondary-font-color);
+}
+.price {
+  font-size: var(--primary-font-size);
+  font-weight: bold;
+}
+.offer {
+  color: var(--red);
+}
+.hotelPriceDiv div {
+  margin: 10px;
+}
+
+/* for star rating*/
+.rating {
+  --percent: calc(var(--rating) / 5 * 100%);
+
+  display: inline-block;
+  font-size: var(--rating-size);
+  line-height: 1;
+}
+.self {
+  font-family: Times;
+}
+.rating::before {
+  letter-spacing: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--rating-background) var(--percent),
+    var(--rating-color) var(--percent)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.star::before {
+  content: "★★★★★";
+}
+
+.self::before {
+  content: "●●●●●";
+}

@@ -1,0 +1,14 @@
+:root {
+  --bg-color: rgb(255, 255, 255);
+  --border-color: rgb(134, 127, 127);
+  --primary-font-size: 12px;
+  --secondary-font-color: rgb(147, 141, 141);
+  --secondary-font-size: 12px;
+  --teritiary-font-size: 12px;
+  --red: rgb(183, 34, 34);
+  --green: rgb(23, 88, 23);
+
+  --rating-size: 20px;
+  --rating-color: rgb(158, 144, 144);
+  --rating-background: #fc0;
+}

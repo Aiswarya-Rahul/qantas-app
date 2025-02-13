@@ -10,7 +10,14 @@ const Layout = () => {
   return (
     <>
       <Header hotelCount={hotelCount} />
-      <HotelList />
+      {hotelList &&
+        hotelList.map((hotel) => (
+          <HotelList
+            key={hotel.id}
+            hotel={hotel.property}
+            offer={hotel.offer}
+          />
+        ))}
     </>
   );
 };
