@@ -8,6 +8,8 @@ A user of Qantas Hotels would like to see a list of hotels that can be sorted by
 
 - React.js (Vite) + JSX
 - ESLint & Prettier for code formatting
+- Redux Toolkit for state management
+- Vitest for testing
 
 # Installation and Setup
 
@@ -19,4 +21,14 @@ A user of Qantas Hotels would like to see a list of hotels that can be sorted by
 
 # Solution approach
 
+- Divided the application into 5 components: App, Layout, Header, HotelList and HotelCard
+- Used PropsTypes for type checking
+- Used Redux Toolkit for centralised state management.
+- Used CSS Modules for styling components, and media query for making it responsive.
+- Sort functionality is handled in a generic function, that can be easily extended for other parameters.
+- On load of the page the hotels are sorted by price in ascending order.
+
 # Trade-offs
+
+- Use of Type Script for strict type checking
+- Use of Story Book for writing stories about components and do accessibility testing.
