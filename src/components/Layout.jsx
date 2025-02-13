@@ -3,21 +3,27 @@ import Header from "./Header";
 import HotelList from "./HotelList";
 import { DATA_PATH } from "../util/constants";
 import { useDispatch, useSelector } from "react-redux";
-import { setHotelList } from "../util/hotelSlice";
+import { setSortedHotelList, setHotelList } from "../util/hotelSlice";
 
 const Layout = () => {
-  const hotelList = useSelector((store) => store.hotel.hotelList);
+  const hotelList = useSelector((store) => store.hotel.sortedHotelList);
   const hotelCount = hotelList?.length;
   const dispatch = useDispatch();
 
   useEffect(() => {
-    fetch(DATA_PATH)
-      .then((resp) => resp.json())
-      .then((data) => {
+    const fetchHotels = async () => {
+      try {
+        const resp = await fetch(DATA_PATH);
+        const data = await resp.json();
         dispatch(setHotelList(data?.results));
-      })
-      .catch((error) => console.log("There was an error in fetching data"));
-  }, []);
+        dispatch(setSortedHotelList(data?.results));
+      } catch (error) {
+        console.log("There was an error in fetching data");
+      }
+    };
+
+    fetchHotels();
+  }, [dispatch]);
 
   return (
     <>
