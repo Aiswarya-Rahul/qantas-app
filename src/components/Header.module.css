@@ -27,4 +27,46 @@ header {
     float: right;
   }
 }
-/*TODO::responsive styling*/
+
+/*Responsive styling*/
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  /* Adjust logo size */
+  header img {
+    width: 200px;
+  }
+
+  .hotelFilterSection {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start;
+  }
+
+  .hotelCount {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  #filterDiv {
+    width: 100%;
+    text-align: left;
+  }
+}
+@media (max-width: 480px) {
+  header img {
+    width: 200px;
+  }
+
+  .hotelCount {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  #filterDiv {
+    width: 100%;
+    text-align: left;
+  }
+}

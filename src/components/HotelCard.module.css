@@ -9,7 +9,6 @@
   column-gap: 15px;
   padding: 15px;
 }
-
 .promoName {
   position: absolute;
   top: 25px;
@@ -21,6 +20,7 @@
   font-weight: bold;
   color: var(--red);
 }
+/* Ensure hotel name truncates properly */
 .hotelName {
   font-size: var(--primary-font-size);
   color: rgb(14, 13, 13);
@@ -47,6 +47,7 @@
   border-top: 1px solid #cacaca;
   padding: 8px;
 }
+
 .hotelAddressDiv {
   margin-bottom: 10px;
 }
@@ -104,4 +105,29 @@
 
 .self::before {
   content: "●●●●●";
+}
+
+/* Responsive styling */
+/* Adjust grid layout for smaller screens */
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr; /* Single-column layout for mobile */
+    padding: 10px;
+  }
+  .hotelImage {
+    width: 300px;
+  }
+  .hotelDetailsDiv {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+/* Reduce max width on smaller screens */
+@media (max-width: 480px) {
+  .hotelName {
+    max-width: 200px;
+  }
+  .hotelImage {
+    width: 90%;
+  }
 }
