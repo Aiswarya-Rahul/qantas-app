@@ -1,12 +1,11 @@
-import Header from "./components/Header";
 import Layout from "./components/Layout";
+import { Provider } from "react-redux";
+import store from "./util/store";
 const App = () => {
   return (
-    <>
-      <div className="App">
-        <Layout />
-      </div>
-    </>
+    <Provider store={store}>
+      <Layout />
+    </Provider>
   );
 };
 
