@@ -26,7 +26,7 @@ A user of Qantas Hotels would like to see a list of hotels that can be sorted by
 - Used Redux Toolkit for centralised state management.
 - Used CSS Modules for styling components, and media query for making it responsive.
 - Sort functionality is handled in a generic function, that can be easily extended for other parameters.
-- On load of the page the hotels are sorted by price in ascending order.
+- The hotels are sorted by price in ascending order on load of the page.
 
 # Trade-offs
 
@@ -38,3 +38,8 @@ A user of Qantas Hotels would like to see a list of hotels that can be sorted by
 
 - Use of Tailwind.css for styling
 - Make location configurable
+- Use useMemo to avoid unnecessary renders for hotel count
+- Prevent unnecessary re-renders of Header and HotelList using React.memo
+- Use of pagination with the help of React Window to limit the number of hotels
+- Load HotelList component lazily, with the help of Suspense and Lazy loading
+- Move Fetch Logic to Redux Middleware (Thunk)
