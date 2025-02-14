@@ -1,0 +1,15 @@
+{
+  "promotion": {
+    "title": "Exclusive Deal",
+    "type": "MEMBER"
+  },
+  "name": "Deluxe King",
+  "displayPrice": {
+    "amount": 535.0,
+    "currency": "AUD"
+  },
+  "savings": null,
+  "cancellationOption": {
+    "cancellationType": "FREE_CANCELLATION"
+  }
+}

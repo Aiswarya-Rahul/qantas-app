@@ -2,17 +2,7 @@ import HotelCard from "./HotelCard";
 import PropTypes from "prop-types";
 
 const HotelList = ({ hotel, offer }) => {
-  return (
-    <HotelCard
-      {...hotel}
-      offer={
-        offer || {
-          name: "No Offer Available",
-          displayPrice: { amount: 0, currency: "AUD" },
-        }
-      }
-    />
-  );
+  return <HotelCard {...hotel} offer={offer} />;
 };
 
 HotelList.propTypes = {
@@ -37,8 +27,8 @@ HotelList.propTypes = {
     }),
     name: PropTypes.string.isRequired,
     displayPrice: PropTypes.shape({
-      amount: PropTypes.number,
-      currency: PropTypes.string,
+      amount: PropTypes.number.isRequired,
+      currency: PropTypes.string.isRequired,
     }),
     savings: PropTypes.shape({
       amount: PropTypes.number,
@@ -47,6 +37,6 @@ HotelList.propTypes = {
     cancellationOption: PropTypes.shape({
       cancellationType: PropTypes.string,
     }),
-  }),
+  }).isRequired,
 };
 export default HotelList;
