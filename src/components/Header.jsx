@@ -32,23 +32,22 @@ const Header = ({ hotelCount }) => {
     <header data-testid="header">
       <img src={logo} alt="Qantas Logo" />
       <section data-testid="hotelFilter" className={style.hotelFilterSection}>
-        <label className={style.hotelCount}>
+        <p className={style.hotelCount}>
           <b data-testid="totalHotels"> {hotelCount}</b> <i> hotels in </i>
           <b> Sydney. </b>
-        </label>
-        <div
-          data-testid="divFilter"
-          id="filterDiv"
-          className={style.floatRight}
-        >
-          <label className={style.lblSortBy}>Sort by</label>
+        </p>
+        <div data-testid="divFilter" id="filterDiv" className={style.filterDiv}>
+          <label htmlFor="sortByPrice" className={style.lblSortBy}>
+            Sort by
+          </label>
           <select
             role="select"
             title="SortByPrice"
             id="sortByPrice"
-            className=""
+            className={style.sortDropdown}
             onChange={onSortHandler}
             defaultValue="PRICE-ASC"
+            aria-label="Sort hotels by price"
           >
             <option data-testid="select-option" value="PRICE-DESC">
               Price high-low

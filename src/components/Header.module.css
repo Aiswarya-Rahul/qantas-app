@@ -22,9 +22,17 @@ header {
     width: 80%;
   }
 
-  #filterDiv {
-    width: 170px;
+  .filterDiv {
+    width: 180px;
     float: right;
+  }
+  .sortDropdown {
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  .lblSortBy {
+    margin-right: 5px;
   }
 }
 
