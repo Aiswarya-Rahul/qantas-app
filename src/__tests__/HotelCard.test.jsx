@@ -40,7 +40,10 @@ describe("HotelCard", () => {
   });
 
   it("does not display a promotion title when there is none", () => {
-    const hotelWithoutPromo = { ...MOCK_HOTEL_CARD, offer: {} };
+    const hotelWithoutPromo = {
+      ...MOCK_HOTEL_CARD,
+      offer: { ...MOCK_HOTEL_CARD.offer, promotion: {} },
+    };
     render(<HotelCard {...hotelWithoutPromo} />);
     expect(screen.queryByText("Special Offer")).not.toBeInTheDocument();
   });
