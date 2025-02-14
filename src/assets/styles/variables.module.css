@@ -1,9 +1,10 @@
 :root {
   --bg-color: rgb(255, 255, 255);
   --border-color: rgb(134, 127, 127);
-  --primary-font-size: 12px;
+  --price-font-size: 22px;
+  --primary-font-size: 16px;
   --secondary-font-color: rgb(147, 141, 141);
-  --secondary-font-size: 12px;
+  --secondary-font-size: 14px;
   --teritiary-font-size: 12px;
   --red: rgb(183, 34, 34);
   --green: rgb(23, 88, 23);

@@ -67,8 +67,13 @@
   font-size: var(--teritiary-font-size);
   color: var(--secondary-font-color);
 }
+.price::first-letter {
+  font-size: 0.8em;
+  vertical-align: text-top;
+}
 .price {
-  font-size: var(--primary-font-size);
+  display: inline-block;
+  font-size: var(--price-font-size);
   font-weight: bold;
 }
 .offer {
