@@ -13,7 +13,7 @@ A user of Qantas Hotels would like to see a list of hotels that can be sorted by
 
 # Installation and Setup
 
-1. Clone the git repo,
+1. Clone the git repo, https://github.com/Aiswarya-Rahul/qantas-app.git
 2. Install dependencies: npm install OR yarn install
 3. Start app in dev mode: npm run dev,
    for prod: npm run build
