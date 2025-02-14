@@ -10,7 +10,7 @@ const HotelCard = ({
 }) => {
   const { url, caption } = previewImage || {};
   const { ratingType, ratingValue } = rating || {};
-  const hotelAddress = address.join(",");
+  const hotelAddress = address.join(", ");
   const {
     promotion,
     name: promoName,
@@ -24,7 +24,7 @@ const HotelCard = ({
   const savingsAmount = savings?.amount;
 
   return (
-    <div className={style.content}>
+    <div data-testid="hotelCard" className={style.content}>
       <div className={style.imageDiv}>
         <img
           className={style.hotelImage}

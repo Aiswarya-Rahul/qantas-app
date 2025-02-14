@@ -1,0 +1,32 @@
+{
+  "propertyId": "P107804",
+  "title": "PARKROYAL Darling Harbour Sydney",
+  "address": ["150 Day Street", "Sydney"],
+  "previewImage": {
+    "url": "https://unsplash.it/145/125/?random",
+    "caption": "Image of PARKROYAL Darling Harbour Sydney",
+    "imageType": "PRIMARY"
+  },
+  "rating": {
+    "ratingValue": 4.5,
+    "ratingType": "star"
+  },
+  "offer": {
+    "promotion": {
+      "title": "Exclusive Deal",
+      "type": "MEMBER"
+    },
+    "name": "Deluxe King",
+    "displayPrice": {
+      "amount": 535.0,
+      "currency": "AUD"
+    },
+    "savings": {
+      "amount": 28.0,
+      "currency": "AUD"
+    },
+    "cancellationOption": {
+      "cancellationType": "FREE_CANCELLATION"
+    }
+  }
+}
