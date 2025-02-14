@@ -30,5 +30,11 @@ A user of Qantas Hotels would like to see a list of hotels that can be sorted by
 
 # Trade-offs
 
+- Hardcoded location as Sydney.
 - Use of Type Script for strict type checking
 - Use of Story Book for writing stories about components and do accessibility testing.
+
+# Improvements
+
+- Use of Tailwind.css for styling
+- Make location configurable
